@@ -2,17 +2,13 @@ services:
   - type: web
     name: 3agents
     runtime: docker
-    plan: starter          # free plan sleeps after inactivity – starter stays on 24/7
+    plan: free             # free plan: kept awake by an outside ping to /health every 5 min (UptimeRobot)
     region: frankfurt
     healthCheckPath: /health
     numInstances: 1
-    disk:
-      name: data
-      mountPath: /data
-      sizeGB: 1
     envVars:
       - key: DB_PATH
-        value: /data/agents.db
+        value: data/agents.db
       - key: ANTHROPIC_API_KEY
         sync: false
       - key: TWELVEDATA_API_KEY
