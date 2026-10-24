@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="The Analyst">
+  <defs>
+    <radialGradient id="bgA" cx="50%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#3B3F6E"/>
+      <stop offset="1" stop-color="#161830"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#bgA)"/>
+  <!-- chart line in background -->
+  <polyline points="14,150 40,132 62,140 86,108 108,118 132,82 156,92 186,56" fill="none" stroke="#D9A441" stroke-width="3" opacity=".35" stroke-linejoin="round"/>
+  <!-- body -->
+  <path d="M44 200 C46 150 70 120 100 120 C130 120 154 150 156 200Z" fill="#2A2D52"/>
+  <path d="M86 122 L100 150 L114 122Z" fill="#E8E2D0"/>
+  <path d="M96 132 L100 166 L104 132Z" fill="#D9A441"/>
+  <!-- owl head -->
+  <path d="M56 58 L72 74 C80 66 90 62 100 62 C110 62 120 66 128 74 L144 58 L146 96 C146 124 126 140 100 140 C74 140 54 124 54 96Z" fill="#7C6A9C"/>
+  <path d="M100 74 C122 74 136 88 136 104 C136 124 120 134 100 134 C80 134 64 124 64 104 C64 88 78 74 100 74Z" fill="#B3A6CC"/>
+  <!-- glasses -->
+  <circle cx="82" cy="100" r="15" fill="#F2EBD8" stroke="#1C1C30" stroke-width="4"/>
+  <circle cx="118" cy="100" r="15" fill="#F2EBD8" stroke="#1C1C30" stroke-width="4"/>
+  <line x1="97" y1="100" x2="103" y2="100" stroke="#1C1C30" stroke-width="4"/>
+  <circle cx="82" cy="101" r="6.5" fill="#1C1C30"/>
+  <circle cx="118" cy="101" r="6.5" fill="#1C1C30"/>
+  <circle cx="80" cy="98" r="2" fill="#fff"/>
+  <circle cx="116" cy="98" r="2" fill="#fff"/>
+  <!-- beak -->
+  <path d="M100 110 L107 118 L100 126 L93 118Z" fill="#D9A441"/>
+</svg>

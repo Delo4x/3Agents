@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" role="img" aria-label="The Hunter">
+  <defs>
+    <radialGradient id="bgH" cx="50%" cy="35%" r="70%">
+      <stop offset="0" stop-color="#6A3A2A"/>
+      <stop offset="1" stop-color="#24161A"/>
+    </radialGradient>
+  </defs>
+  <circle cx="100" cy="100" r="100" fill="url(#bgH)"/>
+  <!-- target rings -->
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#E26D5A" stroke-width="1.5" opacity=".25"/>
+  <circle cx="100" cy="100" r="62" fill="none" stroke="#E26D5A" stroke-width="1.5" opacity=".2"/>
+  <!-- shoulders / wings -->
+  <path d="M30 200 C40 150 70 132 100 130 C130 132 160 150 170 200Z" fill="#5B3B28"/>
+  <path d="M30 200 C36 170 50 156 66 150 L74 200Z" fill="#7A5236"/>
+  <path d="M170 200 C164 170 150 156 134 150 L126 200Z" fill="#7A5236"/>
+  <!-- hawk head -->
+  <path d="M100 42 C132 42 150 66 148 96 C146 118 132 136 112 142 L100 132 L88 142 C68 136 54 118 52 96 C50 66 68 42 100 42Z" fill="#8C5E3C"/>
+  <path d="M100 74 C122 74 138 86 140 104 C132 126 118 138 100 140 C82 138 68 126 60 104 C62 86 78 74 100 74Z" fill="#E9DCC4"/>
+  <!-- brow -->
+  <path d="M62 84 L92 92 L90 98 L60 92Z" fill="#4A2E1E"/>
+  <path d="M138 84 L108 92 L110 98 L140 92Z" fill="#4A2E1E"/>
+  <!-- eyes -->
+  <circle cx="80" cy="100" r="9" fill="#D9A441"/>
+  <circle cx="120" cy="100" r="9" fill="#D9A441"/>
+  <circle cx="81" cy="101" r="4.5" fill="#1A1210"/>
+  <circle cx="119" cy="101" r="4.5" fill="#1A1210"/>
+  <circle cx="79" cy="98" r="1.6" fill="#fff"/>
+  <circle cx="117" cy="98" r="1.6" fill="#fff"/>
+  <!-- beak -->
+  <path d="M100 104 C110 104 114 112 112 120 C110 128 104 134 100 138 C96 134 90 128 88 120 C86 112 90 104 100 104Z" fill="#D9A441"/>
+  <path d="M100 126 C104 128 106 132 100 140 C96 136 96 130 100 126Z" fill="#8A6324"/>
+  <!-- crosshair -->
+  <g stroke="#E26D5A" stroke-width="2" opacity=".8">
+    <line x1="100" y1="8" x2="100" y2="24"/>
+    <line x1="176" y1="100" x2="192" y2="100"/>
+    <line x1="8" y1="100" x2="24" y2="100"/>
+  </g>
+</svg>

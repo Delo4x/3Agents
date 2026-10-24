@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3Agents – guld &amp; olja</title>
+<link rel="icon" href="/static/avatars/analyst.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand">
+    <span class="mark" aria-hidden="true"><i></i><i></i><i></i></span>
+    <div>
+      <h1>3Agents</h1>
+      <p class="sub">Guld och olja · papperstrading</p>
+    </div>
+  </div>
+  <div class="vitals">
+    <div class="vital"><span class="k">Marknad</span><span class="v" id="market">–</span></div>
+    <div class="vital"><span class="k">Nästa runda</span><span class="v" id="countdown">–</span></div>
+    <div class="vital"><span class="k">Saldo</span><span class="v" id="balance">–</span></div>
+    <div class="vital"><span class="k">Vinst­andel</span><span class="v" id="winrate">–</span></div>
+    <button id="runNow" class="btn">Kör en runda nu</button>
+  </div>
+</header>
+<div class="flags" id="flags"></div>
+
+<main>
+  <section class="council" aria-label="Agenterna">
+    <article class="agent" data-agent="scout">
+      <div class="portrait"><img src="/static/avatars/scout.svg" alt=""><span class="ring"></span></div>
+      <div class="who">
+        <h2>The Scout</h2>
+        <p class="role">Läser hela nyhetsflödet och X</p>
+      </div>
+      <p class="activity">–</p>
+      <div class="views"></div>
+      <p class="summary"></p>
+      <p class="updated"></p>
+    </article>
+    <article class="agent" data-agent="hunter">
+      <div class="portrait"><img src="/static/avatars/hunter.svg" alt=""><span class="ring"></span></div>
+      <div class="who">
+        <h2>The Hunter</h2>
+        <p class="role">Jagar Trump, FinancialJuice, FirstSquawk, Walter Bloomberg</p>
+      </div>
+      <p class="activity">–</p>
+      <div class="views"></div>
+      <p class="summary"></p>
+      <p class="updated"></p>
+    </article>
+    <article class="agent boss" data-agent="analyst">
+      <div class="portrait"><img src="/static/avatars/analyst.svg" alt=""><span class="ring"></span></div>
+      <div class="who">
+        <h2>The Analyst <span class="crown">har sista ordet</span></h2>
+        <p class="role">Läser priset live: trend, timing, nivåer</p>
+      </div>
+      <p class="activity">–</p>
+      <div class="views"></div>
+      <p class="summary"></p>
+      <p class="updated"></p>
+    </article>
+  </section>
+
+  <section class="verdicts" aria-label="Beslut">
+    <div class="verdict" data-sym="XAUUSD"></div>
+    <div class="verdict" data-sym="OIL"></div>
+  </section>
+  <p class="rules" id="rules"></p>
+
+  <section class="lower">
+    <div class="panel feed-panel">
+      <div class="panel-head">
+        <h3>Vad som händer just nu</h3>
+        <div class="filters" role="group" aria-label="Filtrera">
+          <button class="chip on" data-f="all">Alla</button>
+          <button class="chip" data-f="scout">Scout</button>
+          <button class="chip" data-f="hunter">Hunter</button>
+          <button class="chip" data-f="analyst">Analyst</button>
+          <button class="chip" data-f="system">Beslut</button>
+        </div>
+      </div>
+      <ol class="feed" id="feed"></ol>
+    </div>
+    <div class="side">
+      <div class="panel">
+        <div class="panel-head"><h3>Saldo över tid</h3><span class="muted" id="pnlTotal"></span></div>
+        <canvas id="equity" height="160" aria-label="Saldo över tid"></canvas>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3>Öppna positioner</h3></div>
+        <div id="open"></div>
+      </div>
+      <div class="panel">
+        <div class="panel-head"><h3>Avslutade trades</h3></div>
+        <div id="closed"></div>
+      </div>
+    </div>
+  </section>
+</main>
+<script src="/static/app.js"></script>
+</body>
+</html>
